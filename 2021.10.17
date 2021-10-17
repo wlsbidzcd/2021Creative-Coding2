@@ -1,0 +1,43 @@
+
+***文本可视化项目整理***
+
+**创作方法和思路**
+信息收集-
+数据预处理-
+知识表示-
+视觉编码-
+可视化呈现-
+用户认知-
+交互-
+
+**案例整理**
+项目名称         世界上的语言
+作者/艺术家名称     Density Design
+概要描述（文字描述）      它将世界上众多(或者说，我们大多数人)的语言用非语言的方法表现出来。一共有2678种。这件作品可以让你浏览使用共同语言的家庭，看看哪些语言是最常用的，并查看语言在世界各地的使用范围。这是一种了不起的视觉叙事方法：将一个有深度的主题用一种易于理解的方式解读
+·截图/视频素材
+![enter image description here](https://img-blog.csdnimg.cn/img_convert/5cae967b5228290dcee815d6a4e0cebb.png)
+
+
+项目名称 Good Flights上的美国感恩节
+作者/艺术家名称 Google Trends
+概要描述（文字描述）它跟踪感恩节前出发、到达和穿越美国的航班。可视化始于当天很早的时间，随着时间的推移，像播放电影一样显示在全国各地飞行中的航班。不需要显示时间外的任何数字，观众即可以看到当天哪段时间是国际航班、国内航班以及往返于全国各地不同枢纽的航班的热门时间。
+截图/视频素材
+![enter image description here](https://img-blog.csdnimg.cn/img_convert/9ae48408ef067f39b31cbf09b8876bc0.png)
+
+
+size(1080, 600); 
+background(0);
+
+String txt = "Where r u";
+float ww = 0; 
+
+
+for (int i = 0; i < txt.length(); i++) {
+char c = txt.charAt(i); 
+textSize(floor(random(100,200)));
+int cl = int(c); 
+fill(cl);
+text(c, ww, 150);
+ww += textWidth(c);
+
+}
